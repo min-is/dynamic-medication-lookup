@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, request, jsonify, send_from_directory
 from fuzzywuzzy import fuzz
 import os
@@ -6,7 +5,6 @@ import json
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
-# Load medication data from JSON file
 try:
     with open('medications.json', 'r', encoding='utf-8') as f:
         medication_list = json.load(f)
@@ -61,13 +59,13 @@ def suggestions():
                 best_alt_ratio = alt_ratio
                 best_alt_match = alt_match_temp
 
-        # Calculate a combined score, prioritizing starts_with
+
         if starts_with_query(name, query):
-            name_ratio += 20  # Add a bonus for starting with the query
+            name_ratio += 20  
         if best_alt_ratio > 0 and starts_with_query(best_alt_match, query):
             best_alt_ratio += 20
 
-        # Store both name and best alt match, and their ratios
+        # Store both name and best alt match and their ratios
         if best_alt_ratio > name_ratio:
             if best_alt_ratio > 50:
                 for alt in alt_names:
@@ -77,7 +75,7 @@ def suggestions():
         elif name_ratio > 50:
             suggestions_with_matches.append((name, name, name_ratio))
 
-    # Sort by ratio, putting highest first
+    # Sort by ratio putting highest first
     suggestions_with_matches.sort(key=lambda item: item[2], reverse=True)
     top_suggestions = [(item[0], item[1]) for item in suggestions_with_matches[:5]]
     return jsonify(top_suggestions)
@@ -88,7 +86,7 @@ def suggestions():
 def get_medication_details(name):
     name_lower = name.lower()
     if name_lower in medication_data:
-        med_info = medication_data[name_lower]  # changed to .lower()
+        med_info = medication_data[name_lower]  
         details = {
             "name": med_info['name'],
             "description": med_info.get('description', ''),
