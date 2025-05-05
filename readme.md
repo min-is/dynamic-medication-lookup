@@ -3,13 +3,13 @@
 
 ### Overview
 
-This project is a web-based **medication lookup tool** designed to help healthcare providers and patients identify medications, even when the exact spelling or full name is unknown. By combining fuzzy search logic, a modern and accessible UI, and robust backend APIs, the application directly addresses the challenge of medication name uncertainty in clinical and patient settings.
+This project is a web-based **medication lookup tool** designed to help healthcare providers and patients identify medications, even when the exact spelling or full name is unknown.
 
 ---
 
 ### Background
 
-Medication errors and confusion often arise from misspelled or partially remembered drug names. This tool was built to allow both clinicians and patients to look up medications quickly, including those with complex names or common misspellings.
+Medication errors and confusion often come from misspelled or partially remembered drug names. This tool was built to allow both clinicians and patients to look up medications quickly, including those with complex names or common misspellings.
 
 ---
 
