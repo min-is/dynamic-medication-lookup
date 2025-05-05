@@ -65,7 +65,7 @@ python app.py
 
 ---
 
-## Showcased Skills
+## Made with ❤️ using:
 
 - Full-stack web development (Node.js, Python, HTML, CSS, JS)
 - Advanced fuzzy search and string matching
