@@ -7,6 +7,7 @@
             "hpi_elements": ["No specific HPI preferences"],
             "physical_exam": ["Delete the back exam unlesss provided"],
             "mdm": ["Keep the top three and delete other yellow drop downs"],
+            "speed": ["Slightly slower paced"],
             "other_pref": ["She will occasionally provide differentials. If not, she will fill them in herself."]
         }
     },
@@ -14,11 +15,24 @@
         "id": "provider2",
         "name": "Ashraf Abdel-Kerim, MD",
         "preferences": {
-            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX."],
+            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX, otherwise open his normal template .ASHEMSOC2. Make sure to remove all wildcards (***) in the template."],
             "hpi_elements": ["No specific HPI preferences"],
             "physical_exam": ["There are three exam options in his template: .ashfull, .ashlimited, .emsocnormalexam. He will specify which one to use."],
             "mdm": ["For Medi-Cal or Cal-Optima patients, select limited access to healthcare on the social determinants of health section. Additionally, if the patient's BMI > 40 (left sidebar), select morbid obesity. Select languge barriers for all non-English speaking patients."],
+            "speed": ["Normal"],
             "other_pref": ["Dr. Ash has his own EKG template but note that you will still need to add the time and rate."]
+        }
+    },
+    {
+        "id": "provider3",
+        "name": "Gregory Powell, MD",
+        "preferences": {
+            "note_pref": ["You will open the note (.EMSOC2024). Complete the note to the best of your ability and ask for the wildcard (***) data as he signs his charts fast."],
+            "hpi_elements": ["No specific HPI preferences"],
+            "physical_exam": ["Dr. Powell will give the exam after seeing the patient. However, he speaks fast and working with him will require a higher wpm. He also sometimes uses niche words which you may need to look up or ask for."],
+            "mdm": ["You can fill out the social determinants of health and co-morbidities yourself for the most part. As a general rule of thumb, Cal-Optima and Medi-cal patients recieve the 'limited access to healthcare due to insurance' checkbox."],
+            "speed": ["Fast"],
+            "other_pref": ["He will always bring a Rick and Morty FunkoPop to his workspace and you can expcet to listen to EDM during the shift."]
         }
     }
 ]
