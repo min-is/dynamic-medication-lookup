@@ -6,8 +6,8 @@
     <title>Medication Lookup</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { margin: 0; overflow: hidden; } /* Ensure canvas covers the whole background */
-        canvas { display: block; position: fixed; top: 0; left: 0; z-index: -1; } /* Behind other content */
+        body { margin: 0; overflow: hidden; } 
+        canvas { display: block; position: fixed; top: 0; left: 0; z-index: -1; } 
     </style>
 </head>
 <body>
@@ -26,11 +26,11 @@
         canvas.height = window.innerHeight;
         const particlesArray = [];
         const numberOfParticles = 100;
-        const connectDistance = 100; // Distance within which particles connect
+        const connectDistance = 100; 
         const mouse = {
             x: null,
             y: null,
-            radius: 150 // Interaction radius of the mouse
+            radius: 150 // mouse radius
         };
 
         window.addEventListener('resize', () => {
@@ -52,7 +52,7 @@
                 this.color = color;
                 this.vx = vx;
                 this.vy = vy;
-                this.closeToMouse = false; // New property to track proximity to mouse
+                this.closeToMouse = false; // proximity
             }
             draw() {
                 ctx.beginPath();
@@ -69,7 +69,7 @@
                 let dx = mouse.x - this.x;
                 let dy = mouse.y - this.y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-                this.closeToMouse = distance < mouse.radius; // Update proximity status
+                this.closeToMouse = distance < mouse.radius; // update status
 
                 this.draw();
             }
@@ -84,21 +84,21 @@
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (mouse.x !== null && mouse.y !== null && distance < mouse.radius) {
-                    // Draw a line from the particle to the mouse (white)
+                    // line particle mouse
                     ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / mouse.radius})`;
                     ctx.beginPath();
                     ctx.moveTo(particle.x, particle.y);
                     ctx.lineTo(mouse.x, mouse.y);
                     ctx.stroke();
 
-                    // Also connect nearby particles to each other (optional, white)
+                    // particle to particle
                     for (const otherParticle of particlesArray) {
                         if (particle !== otherParticle) {
                             const dx2 = particle.x - otherParticle.x;
                             const dy2 = particle.y - otherParticle.y;
                             const distance2 = Math.sqrt(dx2 * dx2 + dy2 * dy2);
                             if (distance2 < connectDistance / 2) {
-                                ctx.strokeStyle = `rgba(255, 255, 255, ${0.5 - distance2 / (connectDistance * 2)})`; // Adjusted opacity
+                                ctx.strokeStyle = `rgba(255, 255, 255, ${0.5 - distance2 / (connectDistance * 2)})`; 
                                 ctx.beginPath();
                                 ctx.moveTo(particle.x, particle.y);
                                 ctx.lineTo(otherParticle.x, otherParticle.y);
@@ -107,7 +107,6 @@
                         }
                     }
                 } else {
-                    // Subtle connections between all particles when mouse is not close (white)
                     for (const otherParticle of particlesArray) {
                         if (particle !== otherParticle) {
                             const dx2 = particle.x - otherParticle.x;
@@ -152,7 +151,7 @@
                 const y = Math.random() * (canvas.height - size * 2) + size;
                 const vx = (Math.random() - 0.5) * 0.5;
                 const vy = (Math.random() - 0.5) * 0.5;
-                particlesArray.push(new Particle(x, y, size, 'rgba(255, 255, 255, 0.8)', vx, vy)); // White with slight transparency
+                particlesArray.push(new Particle(x, y, size, 'rgba(255, 255, 255, 0.8)', vx, vy)); // white + transparent
             }
         }
 
