@@ -1,0 +1,24 @@
+[
+    {
+        "id": "provider1",
+        "name": "Melissa Rudolph, MD",
+        "preferences": {
+            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX. Avoid using personal templates for the note/imaging/ekg section. She prefers the default EMSOC versions. Dr. Rudolph reads through her charts thoroughly."],
+            "hpi_elements": ["No specific HPI preferences"],
+            "physical_exam": ["Delete the back exam unlesss provided"],
+            "mdm": ["Keep the top three and delete other yellow drop downs"],
+            "other_pref": ["She will occasionally provide differentials. If not, she will fill them in herself."]
+        }
+    },
+    {
+        "id": "provider1",
+        "name": "Melissa Rudolph, MD",
+        "preferences": {
+            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX. Avoid using personal templates for the note/imaging/ekg section. She prefers the default EMSOC versions. Delete all wildcard *** entries. Dr. Ash will fill these in himself."],
+            "hpi_elements": ["No specific HPI preferences"],
+            "physical_exam": ["There are three exam options in his template: .ashfull, .ashlimited, .emsocnormalexam. He will specify which one to use."],
+            "mdm": ["For Medi-Cal or Cal-Optima patients, select limited access to healthcare on the social determinants of health section. Additionally, if the patient's BMI > 40 (left sidebar), select morbid obesity. Select languge barriers for all non-English speaking patients."],
+            "other_pref": ["Dr. Ash has his own EKG template but note that you will still need to add the time and rate."]
+        }
+    }
+]
