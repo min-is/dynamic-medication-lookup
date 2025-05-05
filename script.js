@@ -92,10 +92,4 @@ function displayMedicationDetails(medication) {
         mechanismParagraph.innerHTML = `<span class="detail-label">${medication.mechanism_of_action}</span>`;
         resultsDiv.appendChild(mechanismParagraph);
     }
-
-    if (medication.chemical_structure && medication.chemical_structure !== 'N/A') {
-        const chemicalStructureParagraph = document.createElement('p');
-        chemicalStructureParagraph.innerHTML = `<strong>Chemical Structure:</strong> ${medication.chemical_structure}`;
-        resultsDiv.appendChild(chemicalStructureParagraph);
-    }
 }

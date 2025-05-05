@@ -11,10 +11,10 @@
         }
     },
     {
-        "id": "provider1",
-        "name": "Melissa Rudolph, MD",
+        "id": "provider2",
+        "name": "Ashraf Abdel-Kerim, MD",
         "preferences": {
-            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX. Avoid using personal templates for the note/imaging/ekg section. She prefers the default EMSOC versions. Delete all wildcard *** entries. Dr. Ash will fill these in himself."],
+            "note_pref": ["You will be opening the note. If using DAX, open .EMSOCDAX."],
             "hpi_elements": ["No specific HPI preferences"],
             "physical_exam": ["There are three exam options in his template: .ashfull, .ashlimited, .emsocnormalexam. He will specify which one to use."],
             "mdm": ["For Medi-Cal or Cal-Optima patients, select limited access to healthcare on the social determinants of health section. Additionally, if the patient's BMI > 40 (left sidebar), select morbid obesity. Select languge barriers for all non-English speaking patients."],
