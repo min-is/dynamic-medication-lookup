@@ -30,16 +30,16 @@ searchInput.addEventListener('input', async () => {
                     });
                     suggestionsDiv.appendChild(suggestionItem);
                 });
-                suggestionsDiv.classList.add('show'); // Show suggestions
+                suggestionsDiv.classList.add('show'); 
             } else {
-                suggestionsDiv.classList.remove('show'); // Hide suggestions if no results
+                suggestionsDiv.classList.remove('show'); 
             }
         } catch (error) {
             console.error('Error fetching suggestions:', error);
         }
     } else {
-        suggestionsDiv.classList.remove('show'); // Hide suggestions if query is empty
-        resultsDiv.classList.remove('show'); // Also hide results
+        suggestionsDiv.classList.remove('show'); 
+        resultsDiv.classList.remove('show'); 
     }
 });
 
