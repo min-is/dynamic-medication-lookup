@@ -32,10 +32,10 @@ Medication errors and confusion often come from misspelled or partially remember
 
 ## Getting Started
 
-### Heroku
+### 2. Heroku (Online)
 You can check out the **live version** hosted on Heroku [here](https://medication-lookup-0746b427ba35.herokuapp.com/)
 
-### Prerequisites
+### Local (Offline)
 
 - **Node.js** (for Express backend) or **Python 3** (for Flask backend)
 - `medications.json` file in the project directory.
