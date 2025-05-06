@@ -31,11 +31,14 @@ Medication errors and confusion often come from misspelled or partially remember
 ---
 
 ## Getting Started
+You may either view the deployment via Heroku or download the project files yourself and run the website offline (run app.py).
 
-### 2. Heroku (Online)
+### 1. Heroku (Online)
 You can check out the **live version** hosted on Heroku [here](https://medication-lookup-0746b427ba35.herokuapp.com/)
 
-### Local (Offline)
+### 2. Local (Offline)
+
+You may clone this repository for personal/educational use only.
 
 - **Node.js** (for Express backend) or **Python 3** (for Flask backend)
 - `medications.json` file in the project directory.
