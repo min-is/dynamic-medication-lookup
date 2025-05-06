@@ -67,11 +67,15 @@ python app.py
 
 ## Made with ❤️ using:
 
-- Full-stack web development (Node.js, Python, HTML, CSS, JS)
+- Full-stack (Node.js, Python, HTML, CSS, JS)
 - Advanced fuzzy search and string matching
 - RESTful API design
 
 ---
+
+### Contributors
+
+Isaac Min - Lead Developer
 
 ## License
 
