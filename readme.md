@@ -66,20 +66,8 @@ python app.py
 2. Start typing a medication name. Suggestions will appear instantly.
 3. Click a suggestion to view detailed information.
 
----
-
-## Made with ❤️ using:
-
-- Full-stack (Node.js, Python, HTML, CSS, JS)
-- Advanced fuzzy search and string matching
-- RESTful API design
-
----
-
-### Contributors
-
-Isaac Min - Lead Developer
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
